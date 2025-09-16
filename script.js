@@ -251,6 +251,12 @@ function initContactForm() {
             if (text.includes('@')) {
                 // Email functionality
                 window.location.href = `mailto:${text}`;
+            } else if (this.classList.contains('whatsapp-contact')) {
+                // WhatsApp functionality
+                const phoneNumber = text.replace(/\s+/g, ''); // Remove spaces
+                const message = encodeURIComponent('Hello! I am interested in enquiring about your premium organic pulses and lentils. Could you please provide more information about your products and pricing?');
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+                window.open(whatsappUrl, '_blank');
             }
         });
     });
