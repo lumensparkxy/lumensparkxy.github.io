@@ -154,19 +154,64 @@ function animateCounter(element) {
 function initTypingEffect() {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
+        const originalHTML = heroTitle.innerHTML;
+        
+        // Extract text content and HTML structure
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = originalHTML;
+        const textContent = tempDiv.textContent || tempDiv.innerText || '';
+        
+        // Clear the title and start typing
         heroTitle.innerHTML = '';
         
         setTimeout(() => {
-            typeText(heroTitle, originalText, 0);
+            typeTextWithHTML(heroTitle, originalHTML, textContent, 0);
         }, 500);
     }
 }
 
-function typeText(element, text, index) {
-    if (index < text.length) {
-        element.innerHTML += text.charAt(index);
-        setTimeout(() => typeText(element, text, index + 1), 50);
+function typeTextWithHTML(element, originalHTML, textContent, index) {
+    if (index < textContent.length) {
+        // Get the current character from text content
+        const currentChar = textContent.charAt(index);
+        
+        // Build the HTML progressively, but only show characters up to current index
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = originalHTML;
+        
+        // Find all text nodes and their positions
+        const walker = document.createTreeWalker(
+            tempDiv,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        
+        let textIndex = 0;
+        let node;
+        
+        // Traverse text nodes and truncate content based on current typing position
+        while (node = walker.nextNode()) {
+            const nodeLength = node.textContent.length;
+            if (textIndex + nodeLength <= index + 1) {
+                // Keep this text node as is
+                textIndex += nodeLength;
+            } else {
+                // Truncate this text node
+                const keepLength = (index + 1) - textIndex;
+                node.textContent = node.textContent.substring(0, keepLength);
+                
+                // Remove all subsequent text nodes
+                let nextNode;
+                while (nextNode = walker.nextNode()) {
+                    nextNode.textContent = '';
+                }
+                break;
+            }
+        }
+        
+        element.innerHTML = tempDiv.innerHTML;
+        setTimeout(() => typeTextWithHTML(element, originalHTML, textContent, index + 1), 50);
     }
 }
 
