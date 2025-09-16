@@ -268,6 +268,8 @@ function initContactForm() {
     contactItems.forEach(item => {
         item.addEventListener('click', function() {
             const text = this.querySelector('p').textContent;
+            const heading = this.querySelector('h4').textContent;
+            
             if (text.includes('@')) {
                 // Email functionality
                 window.location.href = `mailto:${text}`;
@@ -277,6 +279,11 @@ function initContactForm() {
                 const message = encodeURIComponent('Hello! I am interested in enquiring about your premium organic pulses and lentils. Could you please provide more information about your products and pricing?');
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
                 window.open(whatsappUrl, '_blank');
+            } else if (heading.toLowerCase().includes('location')) {
+                // Location functionality - open Google Maps
+                const encodedLocation = encodeURIComponent(text);
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedLocation}`;
+                window.open(googleMapsUrl, '_blank');
             }
         });
     });
