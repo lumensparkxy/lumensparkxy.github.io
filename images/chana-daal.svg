@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="chanaGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
+  <!-- Multiple lentil grains -->
+  <circle cx="50" cy="60" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="80" cy="45" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="120" cy="55" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="150" cy="40" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="40" cy="90" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="75" cy="85" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="110" cy="95" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="145" cy="80" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="60" cy="125" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="95" cy="115" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="130" cy="120" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="165" cy="110" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="45" cy="155" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="85" cy="150" r="8" fill="url(#chanaGrad)"/>
+  <circle cx="125" cy="160" r="7" fill="url(#chanaGrad)"/>
+  <circle cx="155" cy="145" r="8" fill="url(#chanaGrad)"/>
+  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8b4513" font-weight="bold">Chana Daal</text>
+</svg>

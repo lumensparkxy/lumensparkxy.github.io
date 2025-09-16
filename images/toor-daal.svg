@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="toorGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffeb3b"/>
+      <stop offset="100%" stop-color="#ff8f00"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
+  <!-- Multiple lentil grains -->
+  <circle cx="50" cy="60" r="8" fill="url(#toorGrad)"/>
+  <circle cx="80" cy="45" r="7" fill="url(#toorGrad)"/>
+  <circle cx="120" cy="55" r="8" fill="url(#toorGrad)"/>
+  <circle cx="150" cy="40" r="7" fill="url(#toorGrad)"/>
+  <circle cx="40" cy="90" r="7" fill="url(#toorGrad)"/>
+  <circle cx="75" cy="85" r="8" fill="url(#toorGrad)"/>
+  <circle cx="110" cy="95" r="7" fill="url(#toorGrad)"/>
+  <circle cx="145" cy="80" r="8" fill="url(#toorGrad)"/>
+  <circle cx="60" cy="125" r="8" fill="url(#toorGrad)"/>
+  <circle cx="95" cy="115" r="7" fill="url(#toorGrad)"/>
+  <circle cx="130" cy="120" r="8" fill="url(#toorGrad)"/>
+  <circle cx="165" cy="110" r="7" fill="url(#toorGrad)"/>
+  <circle cx="45" cy="155" r="7" fill="url(#toorGrad)"/>
+  <circle cx="85" cy="150" r="8" fill="url(#toorGrad)"/>
+  <circle cx="125" cy="160" r="7" fill="url(#toorGrad)"/>
+  <circle cx="155" cy="145" r="8" fill="url(#toorGrad)"/>
+  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff8f00" font-weight="bold">Toor Daal</text>
+</svg>
