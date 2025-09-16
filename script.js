@@ -240,8 +240,28 @@ function initProjectCards() {
     });
 }
 
+// Generate WhatsApp number dynamically to hide from crawlers
+function generateWhatsAppNumber() {
+    // Obfuscated number generation - scrambled and encoded to avoid direct visibility
+    const encoded = [
+        String.fromCharCode(43), // +
+        String.fromCharCode(57, 49), // 91
+        String.fromCharCode(32), // space
+        String.fromCharCode(57, 52, 48, 51, 53), // 94035
+        String.fromCharCode(32), // space  
+        String.fromCharCode(49, 51, 51, 56, 50) // 13382
+    ];
+    return encoded.join('');
+}
+
 // Contact form functionality (placeholder)
 function initContactForm() {
+    // Set WhatsApp number dynamically
+    const whatsappElement = document.querySelector('.whatsapp-contact p');
+    if (whatsappElement) {
+        whatsappElement.textContent = generateWhatsAppNumber();
+    }
+    
     // Add event listeners for contact interactions
     const contactItems = document.querySelectorAll('.contact-item');
     
