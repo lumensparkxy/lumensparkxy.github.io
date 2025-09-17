@@ -25,8 +25,34 @@ A modern, responsive business website for an organic daal (lentils) company buil
 - **HTML5**: Semantic markup and modern web standards
 - **CSS3**: Custom properties, Grid, Flexbox, and animations
 - **JavaScript (ES6+)**: Interactive functionality and smooth user experience
+- **JSON Data**: Modular content management with external data file
 - **Font Awesome**: Professional icons
 - **Google Fonts**: Typography (Inter font family)
+
+## 📄 Content Management
+
+This website uses a modular approach for content management:
+
+- **`data.json`**: Contains all text content, product information, and site data
+- **`index.html`**: HTML structure with placeholders
+- **`script.js`**: Loads JSON data and populates content dynamically
+
+To update content:
+1. Edit `data.json` with your business information
+2. Modify product details, contact info, or any text content
+3. No need to edit HTML files directly
+
+### Data Structure
+
+The `data.json` file includes:
+- Site metadata (title, description, company name)
+- Navigation menu items
+- Hero section content
+- About section with company stats
+- Product catalog (6 products with descriptions and tags)
+- Quality certifications and standards
+- Contact information and social links
+- Footer content
 
 ## 📱 Responsive Breakpoints
 
