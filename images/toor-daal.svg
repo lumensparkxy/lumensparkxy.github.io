@@ -1,27 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
   <defs>
-    <radialGradient id="toorGrad" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#ffeb3b"/>
+    <!-- Realistic toor dal gradient -->
+    <radialGradient id="toorDalGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="30%" stop-color="#ffecb3"/>
+      <stop offset="60%" stop-color="#ffc107"/>
       <stop offset="100%" stop-color="#ff8f00"/>
     </radialGradient>
+    <!-- Split toor gradient -->
+    <radialGradient id="splitToorGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#fffde7"/>
+      <stop offset="50%" stop-color="#fff176"/>
+      <stop offset="100%" stop-color="#f57f17"/>
+    </radialGradient>
+    <!-- Shadow -->
+    <radialGradient id="shadowGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00000015"/>
+      <stop offset="100%" stop-color="#00000000"/>
+    </radialGradient>
   </defs>
-  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
-  <!-- Multiple lentil grains -->
-  <circle cx="50" cy="60" r="8" fill="url(#toorGrad)"/>
-  <circle cx="80" cy="45" r="7" fill="url(#toorGrad)"/>
-  <circle cx="120" cy="55" r="8" fill="url(#toorGrad)"/>
-  <circle cx="150" cy="40" r="7" fill="url(#toorGrad)"/>
-  <circle cx="40" cy="90" r="7" fill="url(#toorGrad)"/>
-  <circle cx="75" cy="85" r="8" fill="url(#toorGrad)"/>
-  <circle cx="110" cy="95" r="7" fill="url(#toorGrad)"/>
-  <circle cx="145" cy="80" r="8" fill="url(#toorGrad)"/>
-  <circle cx="60" cy="125" r="8" fill="url(#toorGrad)"/>
-  <circle cx="95" cy="115" r="7" fill="url(#toorGrad)"/>
-  <circle cx="130" cy="120" r="8" fill="url(#toorGrad)"/>
-  <circle cx="165" cy="110" r="7" fill="url(#toorGrad)"/>
-  <circle cx="45" cy="155" r="7" fill="url(#toorGrad)"/>
-  <circle cx="85" cy="150" r="8" fill="url(#toorGrad)"/>
-  <circle cx="125" cy="160" r="7" fill="url(#toorGrad)"/>
-  <circle cx="155" cy="145" r="8" fill="url(#toorGrad)"/>
-  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff8f00" font-weight="bold">Toor Daal</text>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#fafafa" rx="15"/>
+  
+  <!-- Multiple realistic toor dal pieces -->
+  <!-- Toor dal is typically split and oval-shaped -->
+  <g transform="translate(80,70) rotate(15)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="6" fill="url(#toorDalGrad)"/>
+    <line x1="-7.5" y1="0" x2="7.5" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(140,85) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="8" ry="5.5" fill="url(#toorDalGrad)"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(200,75) rotate(40)">
+    <ellipse cx="0" cy="0" rx="8.8" ry="6.3" fill="url(#toorDalGrad)"/>
+    <line x1="-7.8" y1="0" x2="7.8" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(50,120) rotate(-30)">
+    <ellipse cx="0" cy="0" rx="8.2" ry="5.8" fill="url(#toorDalGrad)"/>
+    <line x1="-7.2" y1="0" x2="7.2" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(110,135) rotate(55)">
+    <ellipse cx="0" cy="0" rx="8.6" ry="6.1" fill="url(#toorDalGrad)"/>
+    <line x1="-7.6" y1="0" x2="7.6" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(170,125) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="8.1" ry="5.6" fill="url(#toorDalGrad)"/>
+    <line x1="-7.1" y1="0" x2="7.1" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(230,140) rotate(25)">
+    <ellipse cx="0" cy="0" rx="8.7" ry="6.2" fill="url(#toorDalGrad)"/>
+    <line x1="-7.7" y1="0" x2="7.7" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(75,175) rotate(-40)">
+    <ellipse cx="0" cy="0" rx="8.3" ry="5.9" fill="url(#toorDalGrad)"/>
+    <line x1="-7.3" y1="0" x2="7.3" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(145,190) rotate(30)">
+    <ellipse cx="0" cy="0" rx="8.9" ry="6.4" fill="url(#toorDalGrad)"/>
+    <line x1="-7.9" y1="0" x2="7.9" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <g transform="translate(215,180) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="8.4" ry="6" fill="url(#toorDalGrad)"/>
+    <line x1="-7.4" y1="0" x2="7.4" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <!-- Some individual halves and smaller pieces -->
+  <ellipse cx="120" cy="60" rx="6.5" ry="4.5" fill="url(#splitToorGrad)" transform="rotate(60 120 60)"/>
+  <ellipse cx="180" cy="110" rx="6" ry="4.2" fill="url(#splitToorGrad)" transform="rotate(-35 180 110)"/>
+  <ellipse cx="90" cy="200" rx="6.3" ry="4.4" fill="url(#splitToorGrad)" transform="rotate(45 90 200)"/>
+  <ellipse cx="240" cy="100" rx="5.8" ry="4" fill="url(#splitToorGrad)" transform="rotate(10 240 100)"/>
+  <ellipse cx="160" cy="55" rx="5.5" ry="3.8" fill="url(#splitToorGrad)" transform="rotate(-50 160 55)"/>
+  <ellipse cx="60" cy="210" rx="6.1" ry="4.3" fill="url(#splitToorGrad)" transform="rotate(70 60 210)"/>
+  
+  <!-- Broken pieces -->
+  <ellipse cx="190" cy="60" rx="4" ry="3" fill="url(#toorDalGrad)" transform="rotate(25 190 60)"/>
+  <ellipse cx="100" cy="220" rx="4.2" ry="3.1" fill="url(#toorDalGrad)" transform="rotate(-15 100 220)"/>
+  <ellipse cx="250" cy="170" rx="3.8" ry="2.8" fill="url(#toorDalGrad)" transform="rotate(80 250 170)"/>
+  
+  <!-- Shadows for depth -->
+  <ellipse cx="82" cy="73" rx="6.5" ry="4" fill="url(#shadowGrad)" transform="rotate(15 82 73)"/>
+  <ellipse cx="142" cy="88" rx="6" ry="3.5" fill="url(#shadowGrad)" transform="rotate(-20 142 88)"/>
+  <ellipse cx="202" cy="78" rx="6.8" ry="4.3" fill="url(#shadowGrad)" transform="rotate(40 202 78)"/>
+  
+  <!-- Central focus area -->
+  <g transform="translate(150,150)">
+    <ellipse cx="0" cy="0" rx="11" ry="7.5" fill="url(#toorDalGrad)" transform="rotate(20)"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#ff8f00" stroke-width="1" transform="rotate(20)"/>
+    <ellipse cx="2" cy="1" rx="8" ry="5.5" fill="url(#shadowGrad)" transform="rotate(20)"/>
+  </g>
 </svg>

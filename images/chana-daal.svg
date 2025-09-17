@@ -1,27 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
   <defs>
-    <radialGradient id="chanaGrad" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#d4af37"/>
-      <stop offset="100%" stop-color="#8b4513"/>
+    <!-- Realistic chana dal gradient -->
+    <radialGradient id="chanaDalGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#ffe082"/>
+      <stop offset="40%" stop-color="#ffb74d"/>
+      <stop offset="70%" stop-color="#ff9800"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </radialGradient>
+    <!-- Split chana gradient -->
+    <radialGradient id="splitChanaGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="50%" stop-color="#ffcc02"/>
+      <stop offset="100%" stop-color="#ff8f00"/>
+    </radialGradient>
+    <!-- Shadow -->
+    <radialGradient id="shadowGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00000015"/>
+      <stop offset="100%" stop-color="#00000000"/>
     </radialGradient>
   </defs>
-  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
-  <!-- Multiple lentil grains -->
-  <circle cx="50" cy="60" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="80" cy="45" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="120" cy="55" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="150" cy="40" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="40" cy="90" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="75" cy="85" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="110" cy="95" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="145" cy="80" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="60" cy="125" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="95" cy="115" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="130" cy="120" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="165" cy="110" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="45" cy="155" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="85" cy="150" r="8" fill="url(#chanaGrad)"/>
-  <circle cx="125" cy="160" r="7" fill="url(#chanaGrad)"/>
-  <circle cx="155" cy="145" r="8" fill="url(#chanaGrad)"/>
-  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8b4513" font-weight="bold">Chana Daal</text>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#fafafa" rx="15"/>
+  
+  <!-- Multiple realistic chana dal pieces -->
+  <!-- Whole/halved pieces (chana dal is naturally split) -->
+  <g transform="translate(80,70) rotate(20)">
+    <ellipse cx="0" cy="0" rx="9" ry="6.5" fill="url(#chanaDalGrad)"/>
+    <path d="M-8,-1 Q0,-3 8,-1 Q0,1 -8,-1" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(140,85) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="6" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.5,-0.5 Q0,-2.5 7.5,-0.5 Q0,1.5 -7.5,-0.5" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(200,75) rotate(35)">
+    <ellipse cx="0" cy="0" rx="9.2" ry="6.8" fill="url(#chanaDalGrad)"/>
+    <path d="M-8.2,-1 Q0,-3 8.2,-1 Q0,1 -8.2,-1" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(50,120) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="8.8" ry="6.3" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.8,-0.8 Q0,-2.8 7.8,-0.8 Q0,1.2 -7.8,-0.8" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(110,135) rotate(50)">
+    <ellipse cx="0" cy="0" rx="9" ry="6.5" fill="url(#chanaDalGrad)"/>
+    <path d="M-8,-1 Q0,-3 8,-1 Q0,1 -8,-1" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(170,125) rotate(-10)">
+    <ellipse cx="0" cy="0" rx="8.3" ry="5.8" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.3,-0.5 Q0,-2.5 7.3,-0.5 Q0,1.5 -7.3,-0.5" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(230,140) rotate(25)">
+    <ellipse cx="0" cy="0" rx="8.7" ry="6.2" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.7,-0.8 Q0,-2.8 7.7,-0.8 Q0,1.2 -7.7,-0.8" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(75,175) rotate(-35)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="6" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.5,-0.5 Q0,-2.5 7.5,-0.5 Q0,1.5 -7.5,-0.5" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(145,190) rotate(30)">
+    <ellipse cx="0" cy="0" rx="9.1" ry="6.6" fill="url(#chanaDalGrad)"/>
+    <path d="M-8.1,-1 Q0,-3 8.1,-1 Q0,1 -8.1,-1" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="translate(215,180) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="8.4" ry="5.9" fill="url(#chanaDalGrad)"/>
+    <path d="M-7.4,-0.6 Q0,-2.6 7.4,-0.6 Q0,1.4 -7.4,-0.6" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Some broken pieces -->
+  <ellipse cx="120" cy="60" rx="6" ry="4.5" fill="url(#splitChanaGrad)" transform="rotate(40 120 60)"/>
+  <ellipse cx="180" cy="110" rx="5.5" ry="4" fill="url(#splitChanaGrad)" transform="rotate(-30 180 110)"/>
+  <ellipse cx="90" cy="200" rx="6.2" ry="4.3" fill="url(#splitChanaGrad)" transform="rotate(60 90 200)"/>
+  <ellipse cx="240" cy="100" rx="5.8" ry="4.1" fill="url(#splitChanaGrad)" transform="rotate(15 240 100)"/>
+  
+  <!-- Shadows for depth -->
+  <ellipse cx="82" cy="73" rx="7" ry="4.5" fill="url(#shadowGrad)" transform="rotate(20 82 73)"/>
+  <ellipse cx="142" cy="88" rx="6.5" ry="4" fill="url(#shadowGrad)" transform="rotate(-15 142 88)"/>
+  <ellipse cx="202" cy="78" rx="7.2" ry="4.8" fill="url(#shadowGrad)" transform="rotate(35 202 78)"/>
+  
+  <!-- Central focus area -->
+  <g transform="translate(150,150)">
+    <ellipse cx="0" cy="0" rx="11.5" ry="8" fill="url(#chanaDalGrad)" transform="rotate(10)"/>
+    <path d="M-10.5,-1.5 Q0,-4 10.5,-1.5 Q0,1.5 -10.5,-1.5" fill="url(#splitChanaGrad)" stroke="#e65100" stroke-width="0.6" transform="rotate(10)"/>
+    <ellipse cx="2" cy="1" rx="8.5" ry="6" fill="url(#shadowGrad)" transform="rotate(10)"/>
+  </g>
 </svg>
