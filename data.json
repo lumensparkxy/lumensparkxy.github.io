@@ -1,0 +1,150 @@
+{
+  "site": {
+    "title": "Organic Daal - Premium Quality Lentils & Pulses",
+    "description": "Premium Organic Daal Provider - High-quality lentils, pulses and legumes sourced directly from organic farms",
+    "keywords": "organic daal, lentils, pulses, organic food, healthy eating, natural products, legumes",
+    "author": "Organic Daal Co.",
+    "companyName": "Organic Daal"
+  },
+  "navigation": [
+    { "href": "#home", "text": "Home" },
+    { "href": "#about", "text": "About Us" },
+    { "href": "#products", "text": "Our Products" },
+    { "href": "#quality", "text": "Quality & Certification" },
+    { "href": "#contact", "text": "Contact" }
+  ],
+  "hero": {
+    "title": "Pure <span class=\"highlight\">Organic Daal</span>",
+    "subtitle": "Premium Quality Lentils & Pulses",
+    "description": "We bring you the finest organic lentils, pulses, and legumes sourced directly from certified organic farms. Nutritious, pure, and naturally grown for your healthy lifestyle.",
+    "buttons": [
+      { "href": "#products", "text": "View Our Products", "class": "btn btn-primary" },
+      { "href": "#contact", "text": "Get Quote", "class": "btn btn-secondary" }
+    ]
+  },
+  "about": {
+    "title": "About Our Company",
+    "paragraphs": [
+      "Welcome to Organic Daal, your trusted partner for premium quality lentils and pulses! We are passionate about bringing you the finest organic daal sourced directly from certified organic farms across India. Our journey began with a simple mission: to provide families with pure, nutritious, and sustainably grown lentils.",
+      "Every grain we offer is carefully selected, tested for quality, and processed using traditional methods that preserve the natural nutrients and authentic flavors. We believe in supporting local farmers while delivering exceptional products to your table."
+    ],
+    "stats": [
+      { "number": "15+", "label": "Daal Varieties" },
+      { "number": "5+", "label": "Years in Business" },
+      { "number": "100%", "label": "Organic Certified" }
+    ]
+  },
+  "products": {
+    "title": "Our Premium Daal Collection",
+    "description": "Discover our wide range of organic lentils and pulses, each carefully selected for superior quality and nutrition.",
+    "items": [
+      {
+        "id": "masoor-daal",
+        "name": "Masoor Daal (Red Lentils)",
+        "image": "images/masoor-daal.jpg",
+        "description": "Premium quality red lentils rich in protein, fiber, and essential minerals. Perfect for quick cooking and excellent nutritional value.",
+        "tags": ["High Protein", "Quick Cook", "Organic Certified"]
+      },
+      {
+        "id": "moong-daal",
+        "name": "Moong Daal (Green Gram)",
+        "image": "images/moong-daal.jpg",
+        "description": "Easily digestible yellow lentils with high protein content. Ideal for babies, elderly, and those recovering from illness.",
+        "tags": ["Easy Digest", "Baby Friendly", "Premium Quality"]
+      },
+      {
+        "id": "chana-daal",
+        "name": "Chana Daal (Bengal Gram)",
+        "image": "images/chana-daal.jpg",
+        "description": "Split chickpeas with a rich, nutty flavor and high fiber content. Excellent source of plant-based protein and essential amino acids.",
+        "tags": ["High Fiber", "Rich Flavor", "Traditional"]
+      },
+      {
+        "id": "toor-daal",
+        "name": "Toor Daal (Pigeon Peas)",
+        "image": "images/toor-daal.jpg",
+        "description": "The most popular daal in Indian cuisine. Rich in protein, carbohydrates, and essential vitamins. Perfect for daily consumption.",
+        "tags": ["Most Popular", "Rich in Vitamins", "Daily Use"]
+      },
+      {
+        "id": "urad-daal",
+        "name": "Urad Daal (Black Gram)",
+        "image": "images/urad-daal.jpg",
+        "description": "Black lentils with white interior, perfect for making crispy dosas and fluffy idlis. High in protein and calcium content.",
+        "tags": ["High Calcium", "Fermentation", "South Indian"]
+      },
+      {
+        "id": "rajma",
+        "name": "Rajma (Kidney Beans)",
+        "image": "images/rajma.jpg",
+        "description": "Premium red kidney beans, a powerhouse of nutrition. Rich in protein, fiber, and antioxidants. Perfect for hearty meals.",
+        "tags": ["Antioxidants", "Hearty Meals", "Premium Grade"]
+      }
+    ]
+  },
+  "quality": {
+    "title": "Quality & Certifications",
+    "categories": [
+      {
+        "title": "Organic Certification",
+        "icon": "fas fa-certificate",
+        "items": ["USDA Organic", "India Organic", "EU Organic", "JAS Organic", "NPOP Certified", "ISO 22000"]
+      },
+      {
+        "title": "Quality Standards",
+        "icon": "fas fa-leaf",
+        "items": ["Pesticide Free", "Non-GMO", "Chemical Free", "Natural Processing", "Quality Testing", "Freshness Guarantee"]
+      },
+      {
+        "title": "Packaging & Delivery",
+        "icon": "fas fa-shipping-fast",
+        "items": ["Vacuum Sealed", "Food Grade", "Moisture Proof", "Fast Shipping", "Safe Packaging", "Bulk Orders"]
+      },
+      {
+        "title": "Health Benefits",
+        "icon": "fas fa-heart",
+        "items": ["High Protein", "Rich in Fiber", "Low Fat", "Iron Rich", "Antioxidants", "Heart Healthy"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Ready to order premium organic daal? Get in touch with us for bulk orders, wholesale pricing, or any questions about our products.",
+    "info": [
+      {
+        "icon": "fas fa-envelope",
+        "title": "Email",
+        "value": "orders@organicdaal.com",
+        "type": "email"
+      },
+      {
+        "icon": "fab fa-whatsapp",
+        "title": "WhatsApp",
+        "value": "Loading...",
+        "type": "whatsapp"
+      },
+      {
+        "icon": "fas fa-map-marker-alt",
+        "title": "Location",
+        "value": "Mumbai, Maharashtra, India",
+        "type": "text"
+      },
+      {
+        "icon": "fas fa-truck",
+        "title": "Delivery",
+        "value": "Pan India Shipping Available",
+        "type": "text"
+      }
+    ],
+    "socialLinks": [
+      { "href": "#", "icon": "fab fa-whatsapp", "label": "WhatsApp" },
+      { "href": "#", "icon": "fab fa-facebook", "label": "Facebook" },
+      { "href": "#", "icon": "fab fa-instagram", "label": "Instagram" },
+      { "href": "#", "icon": "fab fa-linkedin", "label": "LinkedIn" }
+    ]
+  },
+  "footer": {
+    "copyright": "&copy; 2024 Organic Daal Co. All rights reserved.",
+    "tagline": "Pure, Natural, Organic - Bringing you the finest lentils and pulses 🌱"
+  }
+}
