@@ -1,27 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
   <defs>
-    <radialGradient id="masoorGrad" cx="50%" cy="30%" r="70%">
+    <!-- Realistic red lentil gradient -->
+    <radialGradient id="redLentilGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#ff6b47"/>
+      <stop offset="40%" stop-color="#e53e3e"/>
+      <stop offset="80%" stop-color="#c53030"/>
+      <stop offset="100%" stop-color="#9c2a2a"/>
+    </radialGradient>
+    <!-- Split lentil gradient -->
+    <radialGradient id="splitRedGrad" cx="0.3" cy="0.2" r="0.8">
       <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="50%" stop-color="#ff7043"/>
       <stop offset="100%" stop-color="#d84315"/>
     </radialGradient>
+    <!-- Shadow -->
+    <radialGradient id="shadowGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00000015"/>
+      <stop offset="100%" stop-color="#00000000"/>
+    </radialGradient>
   </defs>
-  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
-  <!-- Multiple lentil grains -->
-  <circle cx="50" cy="60" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="80" cy="45" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="120" cy="55" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="150" cy="40" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="40" cy="90" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="75" cy="85" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="110" cy="95" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="145" cy="80" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="60" cy="125" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="95" cy="115" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="130" cy="120" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="165" cy="110" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="45" cy="155" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="85" cy="150" r="8" fill="url(#masoorGrad)"/>
-  <circle cx="125" cy="160" r="7" fill="url(#masoorGrad)"/>
-  <circle cx="155" cy="145" r="8" fill="url(#masoorGrad)"/>
-  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#d84315" font-weight="bold">Masoor Daal</text>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#fafafa" rx="15"/>
+  
+  <!-- Multiple realistic red lentils -->
+  <!-- Whole lentils -->
+  <ellipse cx="80" cy="70" rx="9" ry="6" fill="url(#redLentilGrad)" transform="rotate(15 80 70)"/>
+  <ellipse cx="140" cy="85" rx="8" ry="5.5" fill="url(#redLentilGrad)" transform="rotate(-20 140 85)"/>
+  <ellipse cx="200" cy="75" rx="9.5" ry="6.5" fill="url(#redLentilGrad)" transform="rotate(45 200 75)"/>
+  <ellipse cx="50" cy="120" rx="8.5" ry="5.8" fill="url(#redLentilGrad)" transform="rotate(-30 50 120)"/>
+  <ellipse cx="110" cy="135" rx="9" ry="6" fill="url(#redLentilGrad)" transform="rotate(60 110 135)"/>
+  <ellipse cx="170" cy="125" rx="8" ry="5.5" fill="url(#redLentilGrad)" transform="rotate(-10 170 125)"/>
+  <ellipse cx="230" cy="140" rx="9.5" ry="6.2" fill="url(#redLentilGrad)" transform="rotate(25 230 140)"/>
+  <ellipse cx="75" cy="175" rx="8.5" ry="5.8" fill="url(#redLentilGrad)" transform="rotate(-45 75 175)"/>
+  <ellipse cx="145" cy="190" rx="9" ry="6" fill="url(#redLentilGrad)" transform="rotate(35 145 190)"/>
+  <ellipse cx="215" cy="180" rx="8.2" ry="5.6" fill="url(#redLentilGrad)" transform="rotate(-15 215 180)"/>
+  
+  <!-- Split lentils (showing the characteristic split) -->
+  <g transform="translate(120,60) rotate(30)">
+    <ellipse cx="0" cy="0" rx="9" ry="6" fill="url(#splitRedGrad)"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#d84315" stroke-width="1"/>
+  </g>
+  <g transform="translate(180,110) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="5.5" fill="url(#splitRedGrad)"/>
+    <line x1="-7.5" y1="0" x2="7.5" y2="0" stroke="#d84315" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(90,200) rotate(50)">
+    <ellipse cx="0" cy="0" rx="9.2" ry="6.2" fill="url(#splitRedGrad)"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#d84315" stroke-width="1"/>
+  </g>
+  
+  <!-- Shadows for depth -->
+  <ellipse cx="82" cy="73" rx="7" ry="4" fill="url(#shadowGrad)" transform="rotate(15 82 73)"/>
+  <ellipse cx="142" cy="88" rx="6" ry="3.5" fill="url(#shadowGrad)" transform="rotate(-20 142 88)"/>
+  <ellipse cx="202" cy="78" rx="7.5" ry="4.5" fill="url(#shadowGrad)" transform="rotate(45 202 78)"/>
+  
+  <!-- Central focus area -->
+  <g transform="translate(150,150)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="url(#redLentilGrad)" transform="rotate(20)"/>
+    <ellipse cx="2" cy="1" rx="9" ry="6" fill="url(#shadowGrad)" transform="rotate(20)"/>
+  </g>
 </svg>

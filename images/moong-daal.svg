@@ -1,27 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
   <defs>
-    <radialGradient id="moongGrad" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#fff176"/>
-      <stop offset="100%" stop-color="#f57f17"/>
+    <!-- Realistic yellow moong dal gradient -->
+    <radialGradient id="yellowMoongGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#fff9c4"/>
+      <stop offset="30%" stop-color="#fdd835"/>
+      <stop offset="70%" stop-color="#f9a825"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </radialGradient>
+    <!-- Split moong gradient -->
+    <radialGradient id="splitYellowGrad" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#fff59d"/>
+      <stop offset="50%" stop-color="#ffeb3b"/>
+      <stop offset="100%" stop-color="#ff8f00"/>
+    </radialGradient>
+    <!-- Shadow -->
+    <radialGradient id="shadowGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00000015"/>
+      <stop offset="100%" stop-color="#00000000"/>
     </radialGradient>
   </defs>
-  <rect width="200" height="200" fill="#f5f5f5" rx="10"/>
-  <!-- Multiple lentil grains -->
-  <circle cx="50" cy="60" r="8" fill="url(#moongGrad)"/>
-  <circle cx="80" cy="45" r="7" fill="url(#moongGrad)"/>
-  <circle cx="120" cy="55" r="8" fill="url(#moongGrad)"/>
-  <circle cx="150" cy="40" r="7" fill="url(#moongGrad)"/>
-  <circle cx="40" cy="90" r="7" fill="url(#moongGrad)"/>
-  <circle cx="75" cy="85" r="8" fill="url(#moongGrad)"/>
-  <circle cx="110" cy="95" r="7" fill="url(#moongGrad)"/>
-  <circle cx="145" cy="80" r="8" fill="url(#moongGrad)"/>
-  <circle cx="60" cy="125" r="8" fill="url(#moongGrad)"/>
-  <circle cx="95" cy="115" r="7" fill="url(#moongGrad)"/>
-  <circle cx="130" cy="120" r="8" fill="url(#moongGrad)"/>
-  <circle cx="165" cy="110" r="7" fill="url(#moongGrad)"/>
-  <circle cx="45" cy="155" r="7" fill="url(#moongGrad)"/>
-  <circle cx="85" cy="150" r="8" fill="url(#moongGrad)"/>
-  <circle cx="125" cy="160" r="7" fill="url(#moongGrad)"/>
-  <circle cx="155" cy="145" r="8" fill="url(#moongGrad)"/>
-  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#f57f17" font-weight="bold">Moong Daal</text>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#fafafa" rx="15"/>
+  
+  <!-- Multiple realistic yellow moong dal -->
+  <!-- Whole lentils -->
+  <ellipse cx="75" cy="65" rx="8" ry="5.5" fill="url(#yellowMoongGrad)" transform="rotate(10 75 65)"/>
+  <ellipse cx="135" cy="80" rx="7.5" ry="5" fill="url(#yellowMoongGrad)" transform="rotate(-25 135 80)"/>
+  <ellipse cx="195" cy="70" rx="8.5" ry="6" fill="url(#yellowMoongGrad)" transform="rotate(40 195 70)"/>
+  <ellipse cx="55" cy="115" rx="8" ry="5.5" fill="url(#yellowMoongGrad)" transform="rotate(-35 55 115)"/>
+  <ellipse cx="115" cy="130" rx="8.5" ry="5.8" fill="url(#yellowMoongGrad)" transform="rotate(55 115 130)"/>
+  <ellipse cx="175" cy="120" rx="7.8" ry="5.3" fill="url(#yellowMoongGrad)" transform="rotate(-15 175 120)"/>
+  <ellipse cx="225" cy="135" rx="8.2" ry="5.6" fill="url(#yellowMoongGrad)" transform="rotate(30 225 135)"/>
+  <ellipse cx="70" cy="170" rx="8" ry="5.5" fill="url(#yellowMoongGrad)" transform="rotate(-40 70 170)"/>
+  <ellipse cx="140" cy="185" rx="8.5" ry="5.8" fill="url(#yellowMoongGrad)" transform="rotate(25 140 185)"/>
+  <ellipse cx="210" cy="175" rx="7.9" ry="5.4" fill="url(#yellowMoongGrad)" transform="rotate(-20 210 175)"/>
+  
+  <!-- Split lentils (showing the characteristic split) -->
+  <g transform="translate(110,55) rotate(25)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="5.8" fill="url(#splitYellowGrad)"/>
+    <line x1="-7.5" y1="0" x2="7.5" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(170,105) rotate(-30)">
+    <ellipse cx="0" cy="0" rx="8" ry="5.5" fill="url(#splitYellowGrad)"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(85,195) rotate(45)">
+    <ellipse cx="0" cy="0" rx="8.8" ry="6" fill="url(#splitYellowGrad)"/>
+    <line x1="-7.8" y1="0" x2="7.8" y2="0" stroke="#ff8f00" stroke-width="0.8"/>
+  </g>
+  
+  <!-- Some smaller pieces and halves -->
+  <ellipse cx="160" cy="60" rx="6" ry="4" fill="url(#splitYellowGrad)" transform="rotate(60 160 60)"/>
+  <ellipse cx="120" cy="210" rx="5.5" ry="3.8" fill="url(#splitYellowGrad)" transform="rotate(-45 120 210)"/>
+  <ellipse cx="240" cy="95" rx="6.2" ry="4.2" fill="url(#splitYellowGrad)" transform="rotate(20 240 95)"/>
+  
+  <!-- Shadows for depth -->
+  <ellipse cx="77" cy="68" rx="6" ry="3.5" fill="url(#shadowGrad)" transform="rotate(10 77 68)"/>
+  <ellipse cx="137" cy="83" rx="5.5" ry="3" fill="url(#shadowGrad)" transform="rotate(-25 137 83)"/>
+  <ellipse cx="197" cy="73" rx="6.5" ry="4" fill="url(#shadowGrad)" transform="rotate(40 197 73)"/>
+  
+  <!-- Central focus area -->
+  <g transform="translate(150,150)">
+    <ellipse cx="0" cy="0" rx="11" ry="7.5" fill="url(#yellowMoongGrad)" transform="rotate(15)"/>
+    <ellipse cx="2" cy="1" rx="8" ry="5.5" fill="url(#shadowGrad)" transform="rotate(15)"/>
+  </g>
 </svg>
